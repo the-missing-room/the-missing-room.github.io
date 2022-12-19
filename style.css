@@ -54,6 +54,7 @@ body {
     color: #050505;
     font-family: monospace;
     position: relative;
+    overflow-x: hidden;
 }
 
 main {
@@ -178,3 +179,35 @@ a:hover {
 
 /*-----------------------SMARTPHONE----------------------*/
 
+@media (max-width: 24rem) and (orientation: portrait) { 
+
+    main {
+        width: 100vw;
+        min-height: 100vh;
+    }
+    
+    #mainer {
+        width: 22rem;
+        padding: .5rem;
+    }
+
+    header {
+        width: 22rem;
+    }
+
+    .footText {
+        width: 22rem;
+ 
+    }
+    
+    .footText div {
+        width: 16rem;
+    }
+
+    .imgPrinc {
+        width: 22rem;
+    }
+    
+    
+
+}

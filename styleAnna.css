@@ -54,6 +54,7 @@ body {
     color: #1c1c1c;
     font-family: monospace;
     position: relative;
+    overflow-x: hidden;
 }
 
 main {
@@ -88,22 +89,18 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 .seconde .pictures {
     width: 180px;
     height: 180px;
-
 }
 
 
 footer { 
-
     margin-top: 3rem;
     width: 100vw;
     height: 10rem;
-
     background-color: #050505;
     color: #f2f2f2;
 }
@@ -116,7 +113,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .footText div {
@@ -196,3 +192,36 @@ a:hover {
 }
 
 /*-----------------------SMARTPHONE----------------------*/
+
+@media (max-width: 24rem) and (orientation: portrait) { 
+
+    main {
+        width: 100vw;
+        min-height: 100vh;
+    }
+    
+    #mainer {
+        width: 22rem;
+        padding: .5rem;
+    }
+
+    header {
+        width: 22rem;
+    }
+
+    .footText {
+        width: 22rem;
+ 
+    }
+    
+    .footText div {
+        width: 16rem;
+    }
+
+    .imgPrinc {
+        width: 22rem;
+    }
+    
+    
+
+}
